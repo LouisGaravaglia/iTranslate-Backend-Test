@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "spotify_id": "aa193oijaidjflia",
+            "name": "Oasis",
+            "release_date": "2020-10-31",
+            "spotify_uri": "spotify:lkjaslkfjlkajsd",
+            "img_url": "http://www.spotify.com.image"
+        }
+    ],
+    "required": [
+        "spotify_id",
+        "name",
+        "spotify_uri",
+        "img_url"
+    ],
+    "properties": {
+        "spotify_id": {
+            "$id": "#/properties/spotify_id",
+            "type": "string",
+            "title": "The spotify_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "aa193oijaidjflia"
+            ]
+        },
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Oasis"
+            ]
+        },
+        "release_date": {
+            "$id": "#/properties/release_date",
+            "type": "string",
+            "title": "The release_date schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-10-31"
+            ]
+        },
+        "spotify_uri": {
+            "$id": "#/properties/spotify_uri",
+            "type": "string",
+            "title": "The spotify_uri schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "spotify:lkjaslkfjlkajsd"
+            ]
+        },
+        "img_url": {
+            "$id": "#/properties/img_url",
+            "type": "string",
+            "title": "The img_url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "http://www.spotify.com.image"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
